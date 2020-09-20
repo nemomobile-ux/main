@@ -83,6 +83,18 @@ To trigger rebuild, it is sufficient to press the button "Trigger
 services" on the package page.
 
 
+## Dependencies
+
+To check why packages are pulled as build dependencies, you could use
+
+```
+osc buildinfo -d Fedora_32 armv7l
+```
+
+in the package folder. In the example above, it was done for `Fedora_32` 
+repository with `armv7l` architecture, same options as used for `osc build`.
+
+
 ## Useful links
 
 To check available services and their documentation, run
